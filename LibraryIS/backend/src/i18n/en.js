@@ -1,6 +1,6 @@
 const en = {
   app: {
-    title: 'Application',
+    title: 'Library IS',
   },
 
   auth: {
@@ -28,7 +28,7 @@ const en = {
         'User with this email already exists',
       userNotFound: 'User not found',
       disablingHimself: `You can't disable yourself`,
-      revokingOwnPermission: `You can't revoke your own owner permission`,
+      revokingOwnPermission: `You can't revoke your own admin permission`,
     },
   },
 

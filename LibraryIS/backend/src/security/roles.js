@@ -1,7 +1,7 @@
 class Roles {
   static get values() {
     return {
-      owner: 'owner',
+      admin: 'admin',
       editor: 'editor',
       viewer: 'viewer',
       auditLogViewer: 'auditLogViewer',

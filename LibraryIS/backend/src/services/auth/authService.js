@@ -61,7 +61,7 @@ class AuthService {
       firstName: email.split('@')[0],
       password: hashedPassword,
       email: email,
-      roles: isFirstUser ? [Roles.values.owner] : [],
+      roles: isFirstUser ? [Roles.values.admin] : [],
     });
 
     if (EmailSender.isConfigured) {

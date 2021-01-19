@@ -7,7 +7,7 @@ class Permissions {
       iamEdit: {
         id: 'iamEdit',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.iamSecurityReviewer,
           roles.editor,
         ],
@@ -16,7 +16,7 @@ class Permissions {
       iamCreate: {
         id: 'iamCreate',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.iamSecurityReviewer,
           roles.editor,
         ],
@@ -24,7 +24,7 @@ class Permissions {
       iamImport: {
         id: 'iamImport',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.iamSecurityReviewer,
           roles.editor,
         ],
@@ -32,7 +32,7 @@ class Permissions {
       iamRead: {
         id: 'iamRead',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.iamSecurityReviewer,
           roles.editor,
           roles.viewer,
@@ -41,7 +41,7 @@ class Permissions {
       iamUserAutocomplete: {
         id: 'iamUserAutocomplete',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.viewer,
 
@@ -51,16 +51,16 @@ class Permissions {
       },
       auditLogRead: {
         id: 'auditLogRead',
-        allowedRoles: [roles.owner, roles.auditLogViewer, roles.viewer],
+        allowedRoles: [roles.admin, roles.auditLogViewer, roles.viewer],
       },
       settingsEdit: {
         id: 'settingsEdit',
-        allowedRoles: [roles.owner],
+        allowedRoles: [roles.admin],
       },
       loanImport: {
         id: 'loanImport',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.entityEditor,
           roles.loanEditor,
@@ -69,7 +69,7 @@ class Permissions {
       loanCreate: {
         id: 'loanCreate',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.entityEditor,
           roles.loanEditor,
@@ -79,7 +79,7 @@ class Permissions {
       loanEdit: {
         id: 'loanEdit',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.entityEditor,
           roles.loanEditor,
@@ -89,7 +89,7 @@ class Permissions {
       loanDestroy: {
         id: 'loanDestroy',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.entityEditor,
           roles.loanEditor,
@@ -99,7 +99,7 @@ class Permissions {
       loanRead: {
         id: 'loanRead',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.viewer,
           roles.entityEditor,
@@ -110,7 +110,7 @@ class Permissions {
       loanAutocomplete: {
         id: 'loanAutocomplete',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.viewer,
           roles.entityEditor,
@@ -123,7 +123,7 @@ class Permissions {
       bookImport: {
         id: 'bookImport',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.entityEditor,
           roles.bookEditor,
@@ -132,7 +132,7 @@ class Permissions {
       bookCreate: {
         id: 'bookCreate',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.entityEditor,
           roles.bookEditor,
@@ -142,7 +142,7 @@ class Permissions {
       bookEdit: {
         id: 'bookEdit',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.entityEditor,
           roles.bookEditor,
@@ -152,7 +152,7 @@ class Permissions {
       bookDestroy: {
         id: 'bookDestroy',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.entityEditor,
           roles.bookEditor,
@@ -162,7 +162,7 @@ class Permissions {
       bookRead: {
         id: 'bookRead',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.viewer,
           roles.entityEditor,
@@ -173,7 +173,7 @@ class Permissions {
       bookAutocomplete: {
         id: 'bookAutocomplete',
         allowedRoles: [
-          roles.owner,
+          roles.admin,
           roles.editor,
           roles.viewer,
           roles.entityEditor,
