@@ -1,10 +1,10 @@
 const en = require('./en');
-const ptBR = require('./pt-BR');
+
 const _get = require('lodash/get');
 
 const languages = {
   en: en,
-  'pt-BR': ptBR,
+
 };
 
 function format(message, args) {

@@ -24,7 +24,7 @@ module.exports = {
 
   graphiql: false,
 
-  clientUrl: 'http://localhost:8080',
+  clientUrl: 'http://localhost:8081',
 
   defaultUser: null,
 

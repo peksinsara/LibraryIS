@@ -26,7 +26,7 @@ module.exports = {
 
   graphiql: true,
 
-  clientUrl: 'http://localhost:8080',
+  clientUrl: 'http://localhost:8081',
 
   defaultUser: '<insert your email here>',
 
