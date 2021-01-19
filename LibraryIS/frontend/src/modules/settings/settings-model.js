@@ -67,6 +67,11 @@ const fields = {
     themes,
     { required: true },
   ),
+  loanPeriodDays: new IntegerField(
+    'loanPeriodDays',
+    label('loanPeriodDays'),
+    { required: true },
+  ),
 };
 
 export class SettingsModel extends GenericModel {

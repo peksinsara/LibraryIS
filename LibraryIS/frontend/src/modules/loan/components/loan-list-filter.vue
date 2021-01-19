@@ -8,12 +8,7 @@
     class="filter"
     ref="form"
   >
-    <el-row>
-      <el-col :lg="12" :md="16" :sm="24">
-        <el-form-item :label="fields.id.label" :prop="fields.id.name">
-          <el-input v-model="model[fields.id.name]"/>
-        </el-form-item>
-      </el-col>
+
 
       <el-col style="margin-bottom: -0.41px;" :lg="12" :md="16" :sm="24">
         <el-form-item :label="fields.createdAtRange.label" :prop="fields.createdAtRange.name">
@@ -57,20 +52,7 @@
         </el-form-item>
       </el-col>
 
-      <el-col :lg="12" :md="16" :sm="24">
-        <el-form-item :label="fields.status.label" :prop="fields.status.name">
-          <el-select placeholder v-model="model[fields.status.name]">
-            <el-option :value="undefined">--</el-option>
-            <el-option
-              :key="option.id"
-              :label="option.label"
-              :value="option.id"
-              v-for="option in fields.status.options"
-            ></el-option>
-          </el-select>
-        </el-form-item>
-      </el-col>
-    </el-row>
+
 
     <div class="filter-buttons">
       <el-button :disabled="loading" @click="doFilter" icon="el-icon-fa-search" type="primary">

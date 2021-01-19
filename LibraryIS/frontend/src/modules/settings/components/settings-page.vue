@@ -16,7 +16,11 @@
 
       <app-settings-toolbar></app-settings-toolbar>
 
-      <div class="app-page-spinner" v-if="findLoading" v-loading="findLoading"></div>
+      <div
+        class="app-page-spinner"
+        v-if="findLoading"
+        v-loading="findLoading"
+      ></div>
 
       <el-form
         :label-position="labelPosition"
@@ -29,19 +33,38 @@
         v-if="model"
       >
         <el-form-item
+          :label="fields.loanPeriodDays.label"
+          :props="fields.loanPeriodDays.name"
+          :required="fields.loanPeriodDays.required"
+        >
+        <el-col :lg="11" :md="16" :sm="24">
+        <el-input-number :presicion="0" :step="1" v-model="model[fields.loanloanPeriodDays.name]"/>
+        
+        </el-col>
+        </el-form-item>
+
+        <el-form-item
           :label="fields.theme.label"
           :prop="fields.theme.name"
           :required="fields.theme.required"
         >
           <el-col :lg="11" :md="16" :sm="24">
-            <el-select filterable placeholder v-model="model[fields.theme.name]" value-key="id">
+            <el-select
+              filterable
+              placeholder
+              v-model="model[fields.theme.name]"
+              value-key="id"
+            >
               <el-option
                 :key="option.id"
                 :label="option.label"
                 :value="option.id"
                 v-for="option in fields.theme.options"
               >
-                <div :style="{ backgroundColor: option.hex }" class="settings-box"></div>
+                <div
+                  :style="{ backgroundColor: option.hex }"
+                  class="settings-box"
+                ></div>
                 &#160; {{ option.label }}
               </el-option>
             </el-select>
@@ -59,7 +82,11 @@
               <app-i18n code="common.save"></app-i18n>
             </el-button>
 
-            <el-button :disabled="saveLoading" @click="doReset" icon="el-icon-fa-undo">
+            <el-button
+              :disabled="saveLoading"
+              @click="doReset"
+              icon="el-icon-fa-undo"
+            >
               <app-i18n code="common.reset"></app-i18n>
             </el-button>
           </div>
@@ -76,7 +103,7 @@ import { FormSchema } from '@/shared/form/form-schema';
 import SettingsToolbar from '@/modules/settings/components/settings-toolbar.vue';
 
 const { fields } = SettingsModel;
-const formSchema = new FormSchema([fields.theme]);
+const formSchema = new FormSchema([fields.theme, fields.loanPeriodDays]);
 
 export default {
   name: 'app-settings-page',

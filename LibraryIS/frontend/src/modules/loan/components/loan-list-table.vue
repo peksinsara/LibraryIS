@@ -8,11 +8,9 @@
       row-key="id"
       v-loading="loading"
     >
-      <el-table-column type="selection" width="55"></el-table-column>
+      
 
-      <el-table-column :label="fields.id.label" :prop="fields.id.name" sortable="custom">
-        <template slot-scope="scope">{{ presenter(scope.row, 'id') }}</template>
-      </el-table-column>
+
 
       <el-table-column :label="fields.book.label" :prop="fields.book.name">
         <template slot-scope="scope">
