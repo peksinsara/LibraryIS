@@ -10,9 +10,7 @@
     >
       <el-table-column type="selection" width="55"></el-table-column>
 
-      <el-table-column :label="fields.id.label" :prop="fields.id.name" sortable="custom">
-        <template slot-scope="scope">{{ presenter(scope.row, 'id') }}</template>
-      </el-table-column>
+
 
       <el-table-column
         :label="fields.isbn.label"
@@ -44,7 +42,7 @@
         align="center"
       >
         <template slot-scope="scope">
-          <app-list-item-image :value="presenter(scope.row, 'images')"></app-list-item-image>
+          <app-list-item-image :value="presenter(scope.row, 'images')" class="book-image-list-item"></app-list-item-image>
         </template>
       </el-table-column>
 
@@ -56,13 +54,7 @@
         <template slot-scope="scope">{{ presenter(scope.row, 'status') }}</template>
       </el-table-column>
 
-      <el-table-column
-        :label="fields.createdAt.label"
-        :prop="fields.createdAt.name"
-        sortable="custom"
-      >
-        <template slot-scope="scope">{{ presenter(scope.row, 'createdAt') }}</template>
-      </el-table-column>
+
 
       <el-table-column :fixed="isMobile? undefined : 'right'" align="center" width="180">
         <template slot-scope="scope">
@@ -182,4 +174,13 @@ export default {
 </script>
 
 <style>
+.book-image-list-item{
+  border-radius:0;
+  width:50px;
+  height:70px;
+  line-height: 50;
+}
+.book-image-list-item image{
+  object-fit:cover;
+}
 </style>
