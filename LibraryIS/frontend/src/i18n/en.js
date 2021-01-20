@@ -310,7 +310,7 @@ const en = {
     },
     fields: {
       theme: 'Theme',
-      loanPeriodDays:'Loan Period (In Days)',
+
     },
     colors: {
       default: 'Default',
